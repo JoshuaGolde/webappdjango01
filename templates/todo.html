@@ -1,6 +1,13 @@
 <h1>this is the todo page.</h1>
 
+'''
 <ul>
     <li>temporary todo item a</li>
     <li>temporary todo item b</li>
+</ul>
+'''
+<ul>
+    {% for todo_item in all_items %}
+      <li>{{ todo_item.model }}</li>
+    {% endfor %}
 </ul>
