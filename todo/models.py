@@ -1,5 +1,8 @@
 from django.db import models
 
+class Todo(models.Model):
+    text = models.CharField(max_length=60)
+    complete = models.BooleanField(default=False)
 
-class TodoItem(models.Model):
-    content = models.TextField()
+    def __str__(self):
+        return self.text
