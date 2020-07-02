@@ -28,6 +28,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'authenticate',
     'todo',
     'django.contrib.admin',
     'django.contrib.auth',
