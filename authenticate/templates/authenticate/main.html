@@ -23,12 +23,19 @@
 
                         {% endblock %}
                     </h2>
-				</div>
-				<div>
-					{% block forms %}
+					<div>
+						{% if messages %}
+							{% for messages in messages %}
+								<div class='alert alert-{{ message.tags }}'>
+									{{ message }}
+								</div>
+							{% endfor %}
+						{% endif %}
 
-					{% endblock %}
+						{% block forms %} {% endblock %}
+					</div>
 				</div>
+
 			</div>
 			<footer>
 				<div class="row pad">
