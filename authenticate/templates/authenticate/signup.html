@@ -1,5 +1,7 @@
 {% extends 'authenticate/main.html' %}
 
+{% load crispy_forms_tags %}
+
  {% block title %}
 ToDo Signup
  {% endblock %}
@@ -16,10 +18,10 @@ ToDo Signup
 <form method="POST">
     {% csrf_token %}
     <fieldset class ="form-group">
-        {{ form.as_p }}
+        {{ form|crispy }}
     </fieldset>
     <div class="form-group">
-        <button class="btn btn-outline-info" type ="submit">Sign Up</button>
+        <button type="submit" class="btn btn-warning">Sign Up</button>
     </div>
 </form>
 <div class="border-top pt-3">
@@ -27,6 +29,5 @@ ToDo Signup
         Already have an Account? <a class ="ml-2" href="#">Sign In</a>
     </small>
 </div>
-
  {% endblock %}
 
