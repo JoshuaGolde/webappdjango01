@@ -23,5 +23,6 @@ def signup(request):
         form = UserSignupForm()
     return render(request, 'authenticate/signup.html', {'form': form})
 
-# def signup(request):
-#  return render(request, 'authenticate/signup.html')
+
+def profile(request):
+ return render(request, 'authenticate/profile.html')
