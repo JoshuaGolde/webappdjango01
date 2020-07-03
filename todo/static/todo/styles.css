@@ -31,3 +31,8 @@ footer {
 .list-group-item {
 	color: black;
 }
+
+.navbar {
+    background-color: #F5F6DC;
+    padding: 15px;
+}
