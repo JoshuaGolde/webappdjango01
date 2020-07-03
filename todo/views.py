@@ -7,7 +7,7 @@ from .forms import TodoForm
 
 
 @login_required
-def index(request):
+def todo(request):
     todo_list = Todo.objects.order_by('id')
 
     form = TodoForm()

@@ -7,6 +7,10 @@ from django.contrib.auth.decorators import login_required
 # Create your views here.
 
 
+def welcome(request):
+    return render(request, 'authenticate/welcome.html')
+
+
 def login(request):
     return render(request, 'authenticate/login.html')
 
@@ -25,7 +29,10 @@ def signup(request):
     return render(request, 'authenticate/signup.html', {'form': form})
 
 
+
 @login_required
 def profile(request):
     return render(request, 'authenticate/profile.html')
+
+
 
