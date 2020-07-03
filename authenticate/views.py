@@ -29,5 +29,3 @@ def signup(request):
 def profile(request):
     return render(request, 'authenticate/profile.html')
 
-def welcome(request):
-    return render(request, 'authenticate/welcome.html')

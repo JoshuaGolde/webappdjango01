@@ -29,6 +29,7 @@ INSTALLED_APPS = [
     'authenticate',
     'crispy_forms',
     'todo',
+    'welcome',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
