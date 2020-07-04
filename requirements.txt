@@ -1,3 +1,4 @@
-pip install django-crispy_forms
+django-crispy-forms=1.91
 Django==3.0.7
 Python==3.8.3
+Bootstrap==3.4.2
